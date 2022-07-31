@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fun.jilijili.mapper.MusicPlaylistMapper">
+
+    <resultMap id="BaseResultMap" type="fun.jilijili.domain.MusicPlaylist">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="playlist_name" column="playlist_name" jdbcType="VARCHAR"/>
+            <result property="join_link" column="join_link" jdbcType="VARCHAR"/>
+            <result property="user_id" column="user_id" jdbcType="VARCHAR"/>
+            <result property="play_count" column="play_count" jdbcType="INTEGER"/>
+            <result property="type" column="type" jdbcType="TINYINT"/>
+            <result property="created_by" column="created_by" jdbcType="VARCHAR"/>
+            <result property="created_time" column="created_time" jdbcType="VARCHAR"/>
+            <result property="is_del" column="is_del" jdbcType="TINYINT"/>
+            <result property="updated_by" column="updated_by" jdbcType="INTEGER"/>
+            <result property="updated_time" column="updated_time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,playlist_name,join_link,
+        user_id,play_count,type,
+        created_by,created_time,is_del,
+        updated_by,updated_time
+    </sql>
+</mapper>

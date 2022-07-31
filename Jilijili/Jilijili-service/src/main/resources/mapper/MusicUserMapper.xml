@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fun.jilijili.mapper.MusicUserMapper">
+
+    <resultMap id="BaseResultMap" type="fun.jilijili.domain.MusicUser">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="login_func" column="login_func" jdbcType="VARCHAR"/>
+            <result property="addr_ip" column="addr_ip" jdbcType="VARCHAR"/>
+            <result property="addr_city" column="addr_city" jdbcType="VARCHAR"/>
+            <result property="last_time" column="last_time" jdbcType="VARCHAR"/>
+            <result property="my_link_info" column="my_link_info" jdbcType="VARCHAR"/>
+            <result property="is_del" column="is_del" jdbcType="TINYINT"/>
+            <result property="created_by" column="created_by" jdbcType="VARCHAR"/>
+            <result property="created_time" column="created_time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,login_func,addr_ip,
+        addr_city,last_time,my_link_info,
+        is_del,created_by,created_time
+    </sql>
+</mapper>
